@@ -10,7 +10,7 @@ app.use(express.json()); // handle JSON bodies if needed
 
 // ✅ Routes
 app.get("/", (req, res) => {
-  res.send("Server is ready");
+  res.json({ message: "Server is ready" });
 });
 
 app.get("/api/users", (req, res) => {
